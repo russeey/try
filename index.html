@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Scrollable Note with QR Code - Taylor Swift 1989 Style</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ececec;
+        }
+
+        .note {
+            background: url('your-image.jpg') center center/cover no-repeat;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 100%;
+            padding: 30px;
+            text-align: center;
+            overflow-y: auto;
+            color: #fff; /* Set text color to white or a contrasting color */
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #db7093; /* PaleVioletRed - similar to the 1989 color palette */
+            font-size: 1.8em;
+            margin: 0;
+        }
+
+        .content {
+            max-height: 300px; /* Set the maximum height for the scrollable area */
+            overflow-y: auto;
+        }
+
+        .qr-code {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-style: italic;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="note">
+        <div class="header">
+            <h1>Your Letter Heading</h1>
+        </div>
+
+        <div class="content">
+            <p>
+                Dear [Recipient's Name],
+            </p>
+
+            <!-- Your long message content goes here -->
+
+        </div>
+
+        <!-- Placeholder link for demonstration purposes -->
+        <a href="http://127.0.0.1:5500/index.html" target="_blank" rel="noopener noreferrer">
+            <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example" alt="QR Code">
+        </a>
+
+        <footer>
+            <p>Best regards</p>
+        </footer>
+    </div>
+
+</body>
+</html>
